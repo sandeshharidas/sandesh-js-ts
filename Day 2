@@ -162,30 +162,30 @@ id("kumar", "Pavan", "Bijjavaram", "ka50201500006939", "Karnataka", "India", "ar
 
 class software{
 	constructor(name, qualification, dob, address, number, mobile, mailid, exp, skill, manager, panno){
-	Name = name
-	EduQual = qualification
-	DOB = dob
-	Addr = address
-	Number = number
-	Mobile = mobile
-	Email = mailid
-	Exp = exp
-	Skill = skill
-	Manager = manager
-	PAN = panno    
+	this.Name = name
+	this.EduQual = qualification
+	this.DOB = dob
+	this.Addr = address
+	this.Number = number
+	this.Mobile = mobile
+	this.Email = mailid
+	this.Exp = exp
+	this.Skill = skill
+	this.Manager = manager
+	this.PAN = panno    
     }
     display(){
-	document.write(Name)
-	document.write(EduQual)
-	document.write(DOB)
-	document.write(Addr)
-	document.write(Number)
-	document.write(Mobile)
-	document.write(Email)
-	document.write(Exp)
-	document.write(Skill)
-	document.write(Manager)
-	document.write(PAN)
+	document.write(this.Name)
+	document.write(this.EduQual)
+	document.write(this.DOB)
+	document.write(this.Addr)
+	document.write(this.Number)
+	document.write(this.Mobile)
+	document.write(this.Email)
+	document.write(this.Exp)
+	document.write(this.Skill)
+	document.write(this.Manager)
+	document.write(this.PAN)
     }
 }
 let venkatesh_jvt = new software()
