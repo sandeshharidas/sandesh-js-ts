@@ -1,3 +1,4 @@
+<script>
 class banking{
 	constructor(name, date, time, atmno, cardno, branchname, transaction_no, code, withdrawal, accno, mod, balance, website){
 	this.Bank_Name = name
@@ -143,3 +144,26 @@ function hoodie_tshirt(callback){
 
 hoodie_tshirt(clothes)
 
+function bank_stat(name, date, time, atmno, cardno, branchname, transaction_no, code, withdrawal, accno, mod, balance, website){
+	document.write(Bank_Name)
+	document.write(Date)
+	document.write(Time)
+	document.write(ATM_No)
+	document.write(CARD_No)
+	document.write(BRANCH_NAME)
+	document.write(Txn_No)
+	document.write(Response_code)
+	document.write(Withdrawal)
+	document.write(From_acc)
+	document.write(Mod_RS)
+	document.write(Available_Bal_Rs)
+	document.write(Website)
+}
+
+function net_banking(callback){
+	callback("SBI Bank", "29/05/14", "19:48", "SJNBL48", "xxxx xxxxx xxxx 0516", "Bangalore Main Branch", 2907, 072, "500.00", "xxxxxxxxxx05 xx01", "0.00", "1000.00", "www.statebankofindia.com")
+}
+
+net_banking(bank_stat)
+
+</script>
