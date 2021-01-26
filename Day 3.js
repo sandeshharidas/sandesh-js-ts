@@ -1,3 +1,5 @@
+<script>
+
 company_details = [ "JVT", "B TECH MCA MBA BSC MSC", "2/6/1988", "233/3 Ground floor new thippasandra", "08025216666"]
 
 document.writeln(company_details[0])
@@ -582,3 +584,4 @@ let v_guard = {
 }
 v_guard.display()
 
+</script>
