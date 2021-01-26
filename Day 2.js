@@ -1,3 +1,5 @@
+<script>
+
 var Name = "Naga Lalitha Kumari Bezawada"
 var Dob = "18-02-1989"
 var Time_Of_Birth = "7.30-8PM"
@@ -190,3 +192,5 @@ class software{
 }
 let venkatesh_jvt = new software()
 venkatesh_jvt.display()
+
+</script>
