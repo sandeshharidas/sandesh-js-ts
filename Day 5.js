@@ -40,16 +40,16 @@ for (let i = 0; i < arr_reserve.length; i++)
     document.writeln(arr_reserve[i])	
 }    
 
-function appearance(Weight, Height, Eyecolour, Gender, address, phone, Mobile, State, Country){
+function appearance(Weight, Height, Eyecolour, Gender, Address, Phone, Mobile, State, Country){
 	if (Country == "India"){
 		if (State == "andhrapradesh")
 		{
-	document.writeln(Weight, Height, Eyecolour, Gender, address, phone, Mobile, State)
+	document.writeln(Weight, Height, Eyecolour, Gender, Address, Phone, Mobile, State)
     document.writeln(Height)
     document.writeln(Eyecolour)
     document.writeln(Gender)
-    document.writeln(address)
-    document.writeln(phone)
+    document.writeln(Address)
+    document.writeln(Phone)
     document.writeln(Mobile)
     document.writeln(State)
     }
