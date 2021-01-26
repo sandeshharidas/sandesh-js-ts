@@ -104,6 +104,254 @@ class ticket_res{
     console.log(this.Scheduled_Departure)
     }
 }
-let reservation = new ticket_res(100000380284535, 4115023549, "56213 / TIRUPATI PASSR", "14-Dec-2015", "SLEEPERCLASS", "GENERAL", "04-Jan-2016", "KJM", "TPTY", "KJM", "04-Jan-2016", "TPTY", "21:00 Hrs");
+const reservation = new ticket_res(100000380284535, 4115023549, "56213 / TIRUPATI PASSR", "14-Dec-2015", "SLEEPERCLASS", "GENERAL", "04-Jan-2016", "KJM", "TPTY", "KJM", "04-Jan-2016", "TPTY", "21:00 Hrs");
 reservation.display();
 
+class banking{
+	Bank_Name:string
+	Date:string
+	Time:string
+	ATM_No:string
+	CARD_No:string
+	BRANCH_NAME:string
+	Txn_No:number
+	Response_code:number
+	Withdrawal:string
+	From_acc:string
+	Mod_RS:string
+	Available_Bal_Rs:string
+	Website:string
+	constructor(name:string, date:string, time:string, atmno:string, cardno:string, branchname:string, transaction_no:number, code:number, withdrawal:string, accno:string, mod:string, balance:string, website:string){
+	this.Bank_Name = name
+	this.Date = date
+	this.Time = time
+	this.ATM_No = atmno
+	this.CARD_No = cardno
+	this.BRANCH_NAME = branchname
+	this.Txn_No = transaction_no
+	this.Response_code = code
+	this.Withdrawal = withdrawal
+	this.From_acc = accno
+	this.Mod_RS = mod
+	this.Available_Bal_Rs = balance
+	this.Website = website    
+    }
+    display(){
+	console.log(this.Bank_Name)
+	console.log(this.Date)
+	console.log(this.Time)
+	console.log(this.ATM_No)
+	console.log(this.CARD_No)
+	console.log(this.BRANCH_NAME)
+	console.log(this.Txn_No)
+	console.log(this.Response_code)
+	console.log(this.Withdrawal)
+	console.log(this.From_acc)
+	console.log(this.Mod_RS)
+	console.log(this.Available_Bal_Rs)
+	console.log(this.Website)
+    }
+}
+
+class bill_netbank extends banking{
+	website:string
+	tnebusername:string
+	password:number
+	consumer_number:number
+	Billing_status:string
+	mode_of_payment:string
+	choose_bank:string
+	bank_username:string
+	bank_password:number
+	Transaction_no:string
+	payment_status:string
+	constructor(site:string, uname:string, pwd:number, number_:number, status:string, payment_mode:string, bank:string, b_username:string, b_password:number, trans_no:string, payment_stat:string){
+	super("SBI Bank", "29/05/14", "19:48", "SJNBL48", "xxxx xxxxx xxxx 0516", "Bangalore Main Branch", 2907, 72, "500.00", "xxxxxxxxxx05 xx01", "0.00", "1000.00", "www.statebankofindia.com")
+    this.website = site
+	this.tnebusername = uname
+	this.password = pwd
+	this.consumer_number = number_
+	this.Billing_status = status
+	this.mode_of_payment = payment_mode
+	this.choose_bank = bank
+	this.bank_username = b_username
+	this.bank_password = b_password
+	this.Transaction_no = trans_no
+	this.payment_status = payment_stat
+    }
+    display1(){
+    console.log(this.website)  
+    console.log(this.tnebusername)
+    console.log(this.password)
+    console.log(this.consumer_number)
+    console.log(this.Billing_status)
+    console.log(this.mode_of_payment)
+    console.log(this.choose_bank)
+    console.log(this.bank_username)
+    console.log(this.bank_password)
+    console.log(this.Transaction_no)
+    console.log(this.payment_status)
+    }
+}
+
+const sbi = new bill_netbank("www.tnebnet.org", "agilan", 1234567, 23456123, "paid/unpaid", "netbanking", "sbi", "kumar007", 1234567, "18cv21828578437", "successful")
+sbi.display()
+sbi.display1()
+
+class vehicle{
+	Vehicletype:string
+	Colour:string
+	Enginenumber:string
+	Chassisnumber:string
+	Company:string
+	constructor(type_:string, col:string, engine_no:string, chassis_no:string, company:string){
+	 this.Vehicletype = type_
+     this.Colour = col
+     this.Enginenumber = engine_no
+     this.Chassisnumber = chassis_no
+     this.Company = company 
+	}
+display2(){
+	console.log(this.Vehicletype)
+    console.log(this.Colour)
+    console.log(this.Enginenumber)
+    console.log(this.Chassisnumber)
+    console.log(this.Company)
+	}
+}
+
+class RC extends vehicle{
+	Registration_Number:string
+	Owner_Name:string
+	S_W_Do:string
+	Permanent_Address:string
+	Temporary_Address:string
+	Dealer:string
+	Classis_No:number
+	Engine_No:string
+	Class_of_Vehicle:string
+	Makers_Name:string
+	No_of_Cylinder:number
+	Weight_KG:number
+	Wheel_Base:number
+	Seating_Capacity:number
+	Fuel:string
+	Cubic_cylinder:number
+	constructor(number:string, name:string, sonof:string, paddress:string, taddress:string, dealer:string, chassis:number, engine:string, vehicleclass:string, maker:string, cylinder:number, weight:number, base:number, capacity:number, fuel:string, cc:number){
+	super("light motor vehicle - car", "red", "kp98gtyihh457797", "tc5678898335r45", "BMW")
+    this.Registration_Number = number
+    this.Owner_Name = name
+    this.S_W_Do = sonof
+    this.Permanent_Address = paddress
+    this.Temporary_Address = taddress
+    this.Dealer =  dealer
+    this.Classis_No = chassis
+    this.Engine_No = engine
+    this.Class_of_Vehicle = vehicleclass
+    this.Makers_Name = maker
+    this.No_of_Cylinder = cylinder
+    this.Weight_KG = weight
+    this.Wheel_Base = base
+    this.Seating_Capacity = capacity
+    this.Fuel = fuel
+    this.Cubic_cylinder = cc
+    }
+    display1(){
+	console.log(this.Registration_Number)
+    console.log(this.Owner_Name)
+    console.log(this.S_W_Do)
+    console.log(this.Permanent_Address)
+    console.log(this.Temporary_Address)
+    console.log(this.Dealer)
+    console.log(this.Classis_No)
+    console.log(this.Engine_No)
+    console.log(this.Class_of_Vehicle)
+    console.log(this.Makers_Name)
+    console.log(this.No_of_Cylinder)
+    console.log(this.Weight_KG)
+    console.log(this.Wheel_Base)
+    console.log(this.Seating_Capacity)
+    console.log(this.Fuel)
+    console.log(this.Cubic_cylinder)
+	}
+}
+const registration = new RC("TN 22 CY 2917", "Sachin", "Sirinivasan", "Mysore", "Bangalore", "Murugan Vehicles& Services Limited", 5793603, "0G3N72505757", "LMV (CAR)", "Maruthi SuzUKI India LTD", 3, 740, 2360, 5, "Petrol", 796)
+registration.display1()
+registration.display2()
+
+class tv_specs{
+	Model:string
+	LED_lighting:string
+	Sizes:string
+	Type_of_240_Hz:string
+	Wireless_HDMI:string
+	USB:string
+	Built_in_videoservice:string
+	price_RS:number
+	constructor(model:string, lighting:string, size:string, type_:string, wireless:string, usb:string, built:string, price:number){
+    this.Model = model
+	this.LED_lighting = lighting
+	this.Sizes = size
+	this.Type_of_240_Hz = type_
+	this.Wireless_HDMI = wireless
+	this.USB = usb
+	this.Built_in_videoservice = built
+	this.price_RS = price
+    }
+    display(){
+    console.log(this.Model)
+    console.log(this.LED_lighting)
+    console.log(this.Sizes)
+    console.log(this.Type_of_240_Hz)
+    console.log(this.Wireless_HDMI)
+    console.log(this.USB)
+    console.log(this.Built_in_videoservice)
+    console.log(this.price_RS)
+    }
+}
+
+class laptop_specs extends tv_specs{
+	Model:string
+	Os :string
+	Processor :string
+	RAM :string
+	Screen :string
+	Resolution :string
+	Weight :string
+	Storage :string
+	Graphics :string
+	Networking :string
+	Battery_life:string
+	Cost_RS:number
+	constructor(model:string, os:string, processor:string, ram:string, screen:string, resolution:string, weight:string, storage:string, graphics:string, networking:string, battery:string, cost:number){
+    super("LG55LHX", "Backlight w/Local Dimming", "55 inches", "scanning Backlight (240 HZ effect)", "yes", "USB 2.0 (pictures, music,videos)", "youtube", 55000)
+    this.Model = model
+	this.Os = os
+	this.Processor = processor 
+	this.RAM = ram
+	this.Screen = screen
+	this.Resolution = resolution
+	this.Weight = weight
+	this.Storage = storage
+	this.Graphics = graphics
+	this.Networking = networking
+	this.Battery_life = battery 
+	this.Cost_RS = cost
+    }
+    display(){
+	console.log(this.Model)
+    console.log(this.Os)
+    console.log(this.Processor)
+    console.log(this.RAM)
+    console.log(this.Screen)
+    console.log(this.Resolution)
+    console.log(this.Weight)
+    console.log(this.Storage)
+    console.log(this.Graphics)
+    console.log(this.Networking)
+    console.log(this.Battery_life)
+    console.log(this.Cost_RS)
+    }
+}
+const p = new laptop_specs("LGp430", "Windows 7 home base, Premium or professional", "Second Generation Intel Core i3,i5 or i7  processor", "upto 8GB", "14.0 inch HD-LCD -backlit", "1366*768", "4.28 pound", "320GB", "Intel HD Graphics", "802.11 b/g/n,bluetooth 3.0", "6-cell Battery", 50000)
+p.display()
