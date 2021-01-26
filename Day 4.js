@@ -1,3 +1,5 @@
+<script>
+
 class card_details{
 	constructor(name, email, number, comp_name, Designation, Address){
 	this.Name = name
@@ -164,3 +166,5 @@ let hoodie = {
     document.write(this.Effective_Price)    
     }
 }
+
+</script>
