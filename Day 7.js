@@ -2,14 +2,14 @@
 
 class tv_specs{
 	constructor(model, lighting, size, type, wireless, usb, built, price){
-    Model = model
-	LED_lighting = lighting
-	Sizes = size
-	Type_of_240_Hz = type
-	Wireless_HDMI = wireless
-	USB = usb
-	Built_in_videoservice = built
-	price_RS = price
+    	this.Model = model
+	this.LED_lighting = lighting
+	this.Sizes = size
+	this.Type_of_240_Hz = type
+	this.Wireless_HDMI = wireless
+	this.USB = usb
+	this.Built_in_videoservice = built
+	this.price_RS = price
     }
     display(){
     document.write(this.Model)
