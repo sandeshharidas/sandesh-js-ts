@@ -171,3 +171,5 @@ function vehicleinfo(type, col, engine_no, chassis_no, company){
      document.writeln(this.Company)
 }
 vehicleinfo("light motor vehicle - car", "red", "kp98gtyihh457797", "tc5678898335r45", "BMW")
+
+</script>
